@@ -59,6 +59,15 @@ body {
 
 /* 
 ================
+  Helper Class
+================
+*/
+.hidden {
+    display: none;
+}
+
+/* 
+================
   Main Section
 ================
 */
@@ -77,7 +86,7 @@ body {
 .player {
     background-color: rgba(107, 107, 107, 0.656);
     text-align: center;
-    transition: 0.2s;
+    transition: 0.7s;
 }
 
 .player--active {
