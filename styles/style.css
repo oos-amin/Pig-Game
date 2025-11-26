@@ -19,4 +19,164 @@ html {
 
 body {
     font-size: 1.6rem;
+    background: #2A7B9B;
+    background: linear-gradient(325deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Poppins Regular";
+}
+
+/* 
+================
+   Components
+================
+*/
+
+.btn {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 14.5rem;
+    height: 4.6rem;
+    background-color: rgba(240, 248, 255, 0.571);
+    border: none;
+    border-radius: 3rem;
+    font-size: 1.9rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #444;
+    transition: 0.3s;
+}
+
+.btn:active {
+    transform: translateY(0.5rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+
+}
+
+/* 
+================
+  Main Section
+================
+*/
+
+.main {
+    width: 100rem;
+    height: 60rem;
+    border-radius: 1rem;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.player {
+    background-color: rgba(107, 107, 107, 0.656);
+    text-align: center;
+    transition: 0.2s;
+}
+
+.player--active {
+    background-color: rgba(184, 184, 184, 0.794);
+}
+
+.player--winner {
+    background-color: rgb(13 163 34 / 76%);
+}
+
+.player--active .player__name {
+    font-family: "Poppins SemiBold";
+}
+
+.player-0 {
+    width: 50%;
+    height: 100%;
+}
+
+.player-1 {
+    width: 50%;
+    height: 100%;
+
+}
+
+.player__name {
+    margin-top: 10rem;
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: #333;
+
+}
+
+.player__score {
+    display: block;
+    margin-top: 3rem;
+    font-size: 7rem;
+    color: #2a5f9b;
+}
+
+.player__currentscore {
+    width: 21rem;
+    height: 10rem;
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-radius: 1rem;
+    margin: 15rem auto 0 auto;
+    background-color: #2a5f9b;
+}
+
+.player__currentscore-title {
+    font-size: 2rem;
+    color: #ddd;
+}
+
+.player__currentscore-number {
+    font-size: 2.5rem;
+    color: #ddd;
+}
+
+/* 
+================
+   Dice Image
+================
+*/
+
+.dice-image {
+    position: absolute;
+    width: 11rem;
+    height: 11rem;
+    top: -20rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto auto;
+    box-shadow: 0 0 3rem 1px rgba(0, 0, 0, 0.25);
+
+}
+
+/* 
+================
+     Buttons
+================
+*/
+
+.btn__new {
+    top: 5rem;
+    font-size: 2rem;
+    width: 21rem;
+}
+
+.btn__dice {
+    bottom: 16rem;
+    width: 19rem
+}
+
+.btn__hold {
+    bottom: 9.5rem;
 }
