@@ -26,6 +26,8 @@ body {
     align-items: center;
     min-height: 100vh;
     font-family: "Poppins Regular";
+    -webkit-tap-highlight-color: transparent;
+
 }
 
 /* 
