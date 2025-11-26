@@ -62,7 +62,7 @@ btnHold.addEventListener("click", function () {
     document.querySelector(`#player__score-${activePlayer}`).textContent =
       totalScores[activePlayer];
 
-    if (totalScores[activePlayer] >= 20) {
+    if (totalScores[activePlayer] >= 100) {
       document
         .querySelector(`#player-${activePlayer}`)
         .classList.add("player--winner");
