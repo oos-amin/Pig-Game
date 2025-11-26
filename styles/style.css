@@ -71,6 +71,7 @@ body {
     display: flex;
     overflow: hidden;
     position: relative;
+    margin: 1.5rem;
 }
 
 .player {
